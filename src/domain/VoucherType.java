@@ -1,5 +1,5 @@
 package domain;
 
 public enum VoucherType {
-    REST, TRIP, TREATMENT, CRUISE, SHOPPING
+    CRUISE, REST, SHOPPING, TREATMENT, TRIP
 }

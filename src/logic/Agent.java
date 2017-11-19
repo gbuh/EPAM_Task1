@@ -53,7 +53,7 @@ public class Agent {
             
             FakeVoucherStorage listVouchers = new FakeVoucherStorage();
             List<AbstactVoucher> vouchers = listVouchers.read();
-            vouchers.sort(new DaysComparator());
+            vouchers.sort(new AllComparator());
 
             switch(choice) {
             case 1:

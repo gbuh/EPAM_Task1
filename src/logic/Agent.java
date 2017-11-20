@@ -1,6 +1,5 @@
 package logic;
 
-import java.util.Comparator;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
@@ -8,7 +7,12 @@ import java.util.Scanner;
 import domain.*;
 import storage.FakeVoucherStorage;
 
-
+/**
+ * This class imitates the process of tour selection for client.
+ * 
+ * @version 1.11 20 Nov 2017
+ * @author  Igor Lipko
+ */
 public class Agent {
     private String name;
 
@@ -50,7 +54,7 @@ public class Agent {
             }
 
             System.out.println("Наше предложение: ");
-            
+
             FakeVoucherStorage listVouchers = new FakeVoucherStorage();
             List<AbstactVoucher> vouchers = listVouchers.read();
             vouchers.sort(new AllComparator());
@@ -59,32 +63,32 @@ public class Agent {
             case 1:
                 for (AbstactVoucher voucher : vouchers) {
                     if (voucher instanceof RestVoucher)
-                    System.out.println(voucher);
+                        System.out.println(voucher);
                 }
                 break;
-            
+
             case 2:
                 for (AbstactVoucher voucher : vouchers) {
                     if (voucher instanceof TripVoucher)
-                    System.out.println(voucher);
+                        System.out.println(voucher);
                 }
                 break;
             case 3:
                 for (AbstactVoucher voucher : vouchers) {
                     if (voucher instanceof TreatmentVoucher)
-                    System.out.println(voucher);
+                        System.out.println(voucher);
                 }
                 break;
             case 4:
                 for (AbstactVoucher voucher : vouchers) {
                     if (voucher instanceof ShoppingVoucher)
-                    System.out.println(voucher);
+                        System.out.println(voucher);
                 }
                 break;
             case 5:
                 for (AbstactVoucher voucher : vouchers) {
                     if (voucher instanceof CruiseVoucher)
-                    System.out.println(voucher);
+                        System.out.println(voucher);
                 }
                 break;
 
@@ -92,7 +96,7 @@ public class Agent {
                 System.out.println("До свидания! Будем рады Вас видеть снова");
                 System.exit(0);
                 break;
-            
+
             default:
                 System.out.println("Введите цифру из предложенного диапазона");
                 break;    

@@ -5,7 +5,13 @@ import java.util.List;
 
 import domain.*;
 
-
+/**
+ * Class FakeVoucherStorage consists of a set of fake vouchers. It provides
+ * methods to add vouchers into storage (collection).
+ * 
+ * @version 1.11 20 Nov 2017
+ * @author  Igor Lipko
+ */
 public class FakeVoucherStorage implements VoucherStorage {
 
     @Override

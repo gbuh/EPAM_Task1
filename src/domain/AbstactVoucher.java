@@ -1,5 +1,12 @@
 package domain;
 
+/**
+ * This class is the root of the Voucher hierarchy. Provides basic methods
+ * to get and set fields values.
+ * 
+ * @version 1.11 20 Nov 2017
+ * @author  Igor Lipko
+ */
 public abstract class AbstactVoucher {
     private VoucherType type;
     private String description;

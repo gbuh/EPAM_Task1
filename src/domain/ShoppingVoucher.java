@@ -1,7 +1,7 @@
 package domain;
 
 /**
- *Shopping type voucher
+ * Voucher type: Shopping
  * 
  * @version 1.11 20 Nov 2017
  * @author  Igor Lipko

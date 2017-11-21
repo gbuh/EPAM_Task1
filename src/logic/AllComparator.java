@@ -5,10 +5,10 @@ import java.util.Comparator;
 import domain.AbstactVoucher;
 
 /**
- * This class is provides methods to sort vouchers in storage (collection)
- * by amount of days, type of meal and type of transport.
+ * This class compare vouchers on filds:
+ * 1 - day, 2 - meal, 3 - transport
  * 
- * @version 1.11 20 Nov 2017
+ * @version 1.11 21 Nov 2017
  * @author  Igor Lipko
  */
 public class AllComparator implements Comparator<AbstactVoucher>{

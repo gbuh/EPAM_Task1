@@ -1,7 +1,7 @@
 package domain;
 
 /**
- *Trip type voucher
+ * Voucher type: Trip
  * 
  * @version 1.11 20 Nov 2017
  * @author  Igor Lipko

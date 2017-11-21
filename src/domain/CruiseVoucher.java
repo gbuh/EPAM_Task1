@@ -1,7 +1,7 @@
 package domain;
 
 /**
- *Cruise type voucher
+ * Voucher type: Cruise
  * 
  * @version 1.11 20 Nov 2017
  * @author  Igor Lipko

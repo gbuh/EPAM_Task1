@@ -56,7 +56,7 @@ public abstract class AbstactVoucher {
     
     @Override
     public String toString() {
-        return "\nПутевка " + type + ": " + description + " на " + days
-                + " дней c питанием: " + meals + ". Транспорт: " + transport;
+        return "\nПутевка " + type.getName() + ": " + description + " на " + days
+                + " дней c питанием: " + meals.getName() + ". Транспорт: " + transport.getName();
     }
 }

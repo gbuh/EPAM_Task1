@@ -1,7 +1,7 @@
 package domain;
 
 /**
- *Rest type voucher
+ * Voucher type: Rest
  * 
  * @version 1.11 20 Nov 2017
  * @author  Igor Lipko

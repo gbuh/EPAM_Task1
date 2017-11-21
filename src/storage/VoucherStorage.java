@@ -11,5 +11,5 @@ import domain.AbstactVoucher;
  * @author  Igor Lipko
  */
 public interface VoucherStorage {
-        List<AbstactVoucher> read();
+    List<AbstactVoucher> read();
 }

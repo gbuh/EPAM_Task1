@@ -1,6 +1,8 @@
 package test;
 
+import logic.AbstractSeller;
 import logic.Agent;
+import logic.Consultant;
 
 /**
  * This program defines the several types of vouchers, imitates the process of
@@ -11,9 +13,12 @@ import logic.Agent;
  */
 public class Main {
 
-    public static void main(String[] args) {        
+    public static void main(String[] args) {
         System.out.println("Турагентство \"Путешествие без границ\"");
-        Agent agent = new Agent("Татьяна");
-        agent.offer();
+        AbstractSeller consultant = new Consultant("Марина");
+        consultant.offer();
+        /* Other variant of seller */
+        // AbstractSeller agent = new Agent();
+        // agent.offer();
     }
 }

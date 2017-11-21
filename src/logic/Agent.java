@@ -1,5 +1,7 @@
 package logic;
 
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
@@ -8,26 +10,17 @@ import domain.*;
 import storage.FakeVoucherStorage;
 
 /**
- * This class imitates the process of tour selection for client.
+ * Seller type: Agent
  * 
  * @version 1.11 20 Nov 2017
  * @author  Igor Lipko
  */
-public class Agent {
-    private String name;
-
+public class Agent extends AbstractSeller {
     public Agent(String name) {
-        this.name = name;
+        super(name);
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
+    @Override
     public void offer() {
         Scanner scanner = new Scanner(System.in);
         int choice = -1;
@@ -55,9 +48,10 @@ public class Agent {
 
             System.out.println("Наше предложение: ");
 
+            Comparator<AbstactVoucher> comarator = new AllComparator();
             FakeVoucherStorage listVouchers = new FakeVoucherStorage();
             List<AbstactVoucher> vouchers = listVouchers.read();
-            vouchers.sort(new AllComparator());
+            Collections.sort(vouchers, comarator);
 
             switch(choice) {
             case 1:

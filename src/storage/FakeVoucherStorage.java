@@ -80,7 +80,7 @@ public class FakeVoucherStorage implements VoucherStorage {
         ninthVoucher.setMeals(MealsType.NOT_MEALS);
         ninthVoucher.setTransport(TransportType.BUS);
         vouchers.add(ninthVoucher);
-        
+
         return vouchers;
     }
 }

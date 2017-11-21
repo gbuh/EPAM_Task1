@@ -67,18 +67,21 @@ public class Agent extends AbstractSeller {
                         System.out.println(voucher);
                 }
                 break;
+
             case 3:
                 for (AbstactVoucher voucher : vouchers) {
                     if (voucher instanceof TreatmentVoucher)
                         System.out.println(voucher);
                 }
                 break;
+
             case 4:
                 for (AbstactVoucher voucher : vouchers) {
                     if (voucher instanceof ShoppingVoucher)
                         System.out.println(voucher);
                 }
                 break;
+
             case 5:
                 for (AbstactVoucher voucher : vouchers) {
                     if (voucher instanceof CruiseVoucher)
